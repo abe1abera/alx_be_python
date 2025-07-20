@@ -10,9 +10,9 @@ match priority:
     case "medium":
         reminder = f"Reminder: '{task}' is a medium priority task"
     case "low":
-        reminder = f"Note: '{task}' is a low priority task. Consider completing it when you have free time."
+        reminder = f"Reminder: '{task}' is a low priority task. Consider completing it when you have free time."
     case _:
-        reminder = f"'{task}' has an undefined priority."
+        reminder = f"Reminder: '{task}' has an undefined priority."
 
 # Modify the reminder if time-bound is yes
 if time_bound == "yes":
