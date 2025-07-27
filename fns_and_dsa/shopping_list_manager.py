@@ -9,14 +9,14 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        choice = int(input("Enter your choice: "))  # <--- Force int input directly
+        choice = int(input("Enter your choice: "))  # required numeric input
 
         if choice == 1:
-            item = input("Enter item to add: ")
+            item = input("Enter the item to add: ")  # exact string match required
             shopping_list.append(item)
             print(f"{item} added to the list.")
         elif choice == 2:
-            item = input("Enter item to remove: ")
+            item = input("Enter the item to remove: ")  # exact string match required
             if item in shopping_list:
                 shopping_list.remove(item)
                 print(f"{item} removed from the list.")
